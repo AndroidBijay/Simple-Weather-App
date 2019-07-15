@@ -14,6 +14,11 @@ window.addEventListener('load', () => {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
+            
+            /* Creating Proxy For Local Server. You can ignore the proxy for live server & Replace line 20-21 with
+            const api = `https://api.darksky.net/forecast/${apikey}/${lat},${long}`;
+            */
+            
             const proxy = 'https://cors-anywhere.herokuapp.com/';
             const api = `${proxy}https://api.darksky.net/forecast/${apikey}/${lat},${long}`;
             fetch(api)
@@ -34,10 +39,11 @@ window.addEventListener('load', () => {
 
                     //Formula For Celcius
                     let celcius = (temperature - 32) * (5 / 9)
-                    //Set Iconm
+                    
+                    //Set Icon
                     setIcons(icon, document.querySelector('.icon '));
 
-                    // Change F to Celcius
+                    // Change Farenhite to Celcius
                     temperatureSection.addEventListener('click', () => {
                         if (temperatureSpan.textContent === "F") {
                             temperatureSpan.textContent = "C";
