@@ -11,3 +11,10 @@ The Icons are used from [Skycons](https://darkskyapp.github.io/skycons/)
 Github Page of SkyCons: [https://github.com/darkskyapp/skycons.](https://github.com/darkskyapp/skycons)
 
 Please Feel free To Extend This Webapp
+### Instruction:
+
+Open The code editor and change the api key of app.js file to your own.
+
+For Live server remove the proxy From line 19&20 and replace it with 
+
+`const api = `https://api.darksky.net/forecast/${apikey}/${lat},${long}`;`
