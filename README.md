@@ -17,4 +17,4 @@ Open The code editor and change the api key of app.js file to your own.
 
 For Live server remove the proxy From line 19&20 and replace it with 
 
-`const api = `https://api.darksky.net/forecast/${apikey}/${lat},${long}`;`
+<span style="color: #0000ff;">**const api = `https://api.darksky.net/forecast/${apikey}/${lat},${long}`;**</span>
