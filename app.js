@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     let long;
     let lat;
-    let apikey;
+    let apikey;  // Add Your API Key here
     let temperatureDescription = document.querySelector('.temperature-description');
     let temperatureDegree = document.querySelector('.temperature-degree');
     let locationTimezone = document.querySelector('.location-timezone');
